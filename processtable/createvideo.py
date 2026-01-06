@@ -2,7 +2,7 @@ import pandas as pd
 import random
 
 
-def generate_videos_table(movies_file, category_file, theme_file, output_file='videos.csv'):
+def generate_videos_table(movies_file, category_file, theme_file, output_file='videoswithoutuserID.csv'):
     """
     生成videos表数据
 
@@ -184,7 +184,7 @@ if __name__ == "__main__":
     movies_file = 'movies_unique.csv'
     category_file = 'video_category.csv'
     theme_file = 'video_theme.csv'
-    output_file = 'videos.csv'
+    output_file = 'videoswithoutuserID.csv'
 
     # 生成videos表
     generate_videos_table(movies_file, category_file, theme_file, output_file)

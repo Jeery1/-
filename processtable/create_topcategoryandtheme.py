@@ -246,7 +246,7 @@ def calculate_user_preferences(videos_file, stats_file,
 # 主程序
 if __name__ == "__main__":
     # 文件路径
-    videos_file = 'videos.csv'
+    videos_file = 'videoswithoutuserID.csv'
     stats_file = 'user_video_stats.csv'
 
     # 生成用户偏好表
