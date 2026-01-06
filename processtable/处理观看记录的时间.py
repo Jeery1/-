@@ -27,7 +27,7 @@ def seconds_to_time(seconds):
 df['duration'] = df['duration'].apply(seconds_to_time)
 
 # 保存到新文件
-output_path = 'smalldata1_processed.csv'
+output_path = 'user_watch_log.csv'
 df.to_csv(output_path, index=False)
 
 print(f"处理完成，文件已保存至: {output_path}")

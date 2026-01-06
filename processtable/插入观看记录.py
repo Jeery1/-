@@ -70,7 +70,7 @@ class SimpleCSVImporter:
 
 # 使用简化版
 if __name__ == "__main__":
-    csv_file = "smalldata1_processed.csv"
+    csv_file = "user_watch_log.csv"
 
     if os.path.exists(csv_file):
         importer = SimpleCSVImporter()
