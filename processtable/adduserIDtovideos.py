@@ -2,7 +2,7 @@ import pandas as pd
 import random
 
 
-def add_random_userid(input_file, output_file='videos.csv', userid_start=51, userid_end=150):
+def add_random_userid(input_file, output_file='videoswithoutduration.csv', userid_start=51, userid_end=150):
     """
     给videos.csv添加随机userID列
 
@@ -118,7 +118,7 @@ def add_random_userid(input_file, output_file='videos.csv', userid_start=51, use
 
 
 # 更简单的版本
-def add_random_userid_simple(input_file, output_file='videos.csv'):
+def add_random_userid_simple(input_file, output_file='videoswithoutduration.csv'):
     """
     简单版本：直接添加随机userID
     """
@@ -171,7 +171,7 @@ if __name__ == "__main__":
 
     if choice == '1':
         # 完整版
-        output_file = 'videos.csv'
+        output_file = 'videoswithoutduration.csv'
         result = add_random_userid(input_file, output_file)
 
     elif choice == '2':
@@ -191,7 +191,7 @@ if __name__ == "__main__":
             result = None
     else:
         # 默认用完整版
-        output_file = 'videos.csv'
+        output_file = 'videoswithoutduration.csv'
         result = add_random_userid(input_file, output_file)
 
     if result is not None:

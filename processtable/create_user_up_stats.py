@@ -265,7 +265,7 @@ def generate_user_up_stats_simple(videos_file, stats_file, output_file='user_up_
 # 主程序
 if __name__ == "__main__":
     # 文件路径
-    videos_file = 'videos.csv'
+    videos_file = 'videoswithoutduration.csv'
     stats_file = 'user_video_stats.csv'
 
     print("🎯 生成 user_up_stats 表数据")
